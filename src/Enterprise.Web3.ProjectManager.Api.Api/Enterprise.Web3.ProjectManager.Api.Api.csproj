@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>e156eae3-64dd-4ce7-969d-8729756dbed4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Enterprise.Web3.ProjectManager.Api.Core\Enterprise.Web3.ProjectManager.Api.Core.csproj" />
+    <ProjectReference Include="..\Enterprise.Web3.ProjectManager.Api.Data.PostgreSql\Enterprise.Web3.ProjectManager.Api.Data.PostgreSql.csproj" />
+  </ItemGroup>
+
+</Project>
